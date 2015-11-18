@@ -135,6 +135,9 @@ div.plot-head{
 }
 
 div.back-btn-back {
+    position: absolute;
+    bottom: 0;
+    
     background-color:#493C23;
     width: 300px;
     padding: 20px;
