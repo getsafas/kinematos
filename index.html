@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>movie reviews</title>
+	<link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/custom.css" rel="stylesheet">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="main-header">
+			KINEMATOS
+		</div>
+		<div class="row">
+			<div class="col-sm-3 pull-right">
+				<div class="movieSearch">
+					<form method="get" id="movieInput" > <!-- action="search.php" -->
+						<div class="heading-text">
+							NAME
+						</div>
+						<div class="form-group">
+							<input type="text" id="movie-name" class="form-control " placeholder="Eg. Titanic">
+						</div>
+						<button id="submit" class="btn btn-info btn-block">Find<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></button>
+						
+					</form>
+				</div>
+			</div>
+
+			
+			<div class="col-sm-3 pull-right">
+			<div class="back-btn-back" > <!-- style="display:none" -->
+			<button id="back" class="btn btn-success btn-block">Back<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></button>
+			</div>
+			</div>			
+			
+
+			<div class="col-sm-9 pull-left" >
+				<div class="movieFeeds"  >
+					<div class="feeds-header">
+						TOP RATED MOVIES OF 2015	
+					</div>
+					<div class="feeds-full-image">
+						<div class="row">
+							<div class="col-sm-4">
+								<div class="feeds-image">
+									<img class="img-responsive feeds-img" src="img/felix.jpg">
+								</div>
+								<div class="row">
+									<div class="feeds-rating">
+										<div class="col-sm-6">
+											<span class="imdb-rating">
+												Imdb:9.2
+											</span>
+										</div>
+									</div>
+									<div class="feeds-rating">
+										<div class="col-sm-6">
+											<span class="metascore-rating">
+												Metascore:90%
+											</span>
+										</div>
+									</div>
+								</div>
+								<br>
+								<button type="button" id="more-button1" class="btn btn-default center-block">More<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></button>	
+							</div>
+							<div class="col-sm-4">
+								<div class="feeds-image">
+									<img class="img-responsive feeds-img" src="img/inside.jpg">
+								</div>
+								<div class="row">
+									<div class="feeds-rating">
+										<div class="col-sm-6">
+											<span class="imdb-rating">
+												Imdb:8.2
+											</span>
+										</div>
+									</div>
+									<div class="feeds-rating">
+										<div class="col-sm-6">
+											<span class="metascore-rating">
+												Metascore:88%
+											</span>
+										</div>
+									</div>
+								</div>
+								<br>
+								<button type="button" id="more-button2" class="btn btn-default center-block">More<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></button>
+							</div>
+							<div class="col-sm-4">
+								<div class="feeds-image">
+									<img class="img-responsive feeds-img" src="img/martian.jpg">
+								</div>
+								<div class="row">
+									<div class="feeds-rating">
+										<div class="col-sm-6">
+											<span class="imdb-rating">
+												Imdb:8.2
+											</span>
+										</div>
+									</div>
+									<div class="feeds-rating">
+										<div class="col-sm-6">
+											<span class="metascore-rating">
+												Metascore:76%
+											</span>
+										</div>
+									</div>
+								</div>
+								<br>
+								<button type="button" id="more-button3" class="btn btn-default center-block">More<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-9 pull-left">
+				<div class="movieResults" style="display:none;" > 
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="name-tile">
+								Name:
+								<span class="movie-name"> </span>
+								<br>
+								Year:
+								<span class="movie-year"> </span>
+								<br>
+								Genre:
+								<span class="movie-genre"> </span>
+								<br>
+								Language:
+								<span class="movie-language"> </span>
+							</div>
+						</div>
+						
+						<div class="col-sm-6">
+							<div class="actor-tile">
+								Actor:
+								<span class="movie-actor"> </span>
+								<br>
+								Director:
+								<span class="movie-director"> </span>
+								<br>
+								Writer:
+								<span class="movie-writer"> </span>
+								<br>
+								Awards:
+								<span class="movie-awards"> </span>
+							</div>
+						</div>
+					</div>
+					
+					<div class="row">
+						<div class="col-sm-6 ">
+							<div class="imdb-tile">
+								Imdb Rating:
+								<span class="movie-imdb-rating"> </span>
+								<br>
+								Imdb Score:
+								<span class="movie-imdb-score"> </span>
+								<br>
+								Imdb Votes:
+								<span class="movie-imdb-votes"> </span>
+								<br>
+								Metascore:
+								<span class="movie-metascore"> </span>
+							</div>
+						</div>
+						
+						<div class="col-sm-6 ">
+							<div class="plot-tile">
+								<div class="plot-head">Plot</div>
+								<span class="movie-plot-data"> </span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="Mscript.js"></script>
+</body>
+</html>

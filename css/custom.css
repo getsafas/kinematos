@@ -1,0 +1,144 @@
+
+body {
+
+    background-color: #2E2214
+   /* background: url('./../mov1.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;*/
+}
+
+div.main-header {
+    margin: 0 -15px;
+    background-color:#493C23 ;    
+    color: #F76835;
+    font-family: 'Impact',sans-serif;
+    font-size: 2.5em;
+    text-align: left;
+    padding-left: 20px;
+}
+
+div.feeds-header{
+font-size: 1.2em;
+font-weight: bold;
+font-family: sans-serif;
+color: #B8BE1C;
+text-align: center;
+}
+
+
+div.movieSearch {
+    background-color:#493C23;
+    width: 300px;
+    padding: 20px;
+    border-radius: 0px 0px 3px 3px;
+    text-align: center;
+    color: #B8BE1C;
+    font-family: sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    
+}
+
+div.movieFeeds {
+    margin-top:30px;
+    margin-left: 20px;
+    padding: 20px;
+    width:970px;
+    height:562px;
+    border-radius: 3px 3px 0px 0px;
+    background-color:#493C23 ;
+
+}
+
+div.feeds-rating{
+    font-size: 1.2em;
+    color: white;
+    text-align: left;
+}
+
+
+div.feeds-full-image {
+    padding: 20px;
+}
+
+
+.feeds-img{
+    width: 250px;
+    height: 370px; 
+    margin: 0 auto;
+}
+
+div.movieResults {
+    margin-top:30px;
+    margin-left: 20px;
+    padding: 20px;
+    width:970px;
+    height:562px;
+    border-radius: 3px 3px 0px 0px;
+    background-color:#493C23 ;
+
+}
+div.name-tile{
+    font-family: "agency FB", sans-serif;
+    font-size: 1.4em;
+    color: white;
+    text-align: left;
+    background-color: #2E2214; 
+    height:220px;
+    margin:20px;
+    padding-left: 10px;
+    padding-top: 40px;
+
+    overflow-y: auto;
+    
+}
+div.actor-tile{
+    font-family: "agency FB", sans-serif;
+    font-size: 1.4em;
+    color: white;
+    text-align: left;
+    background-color: #2E2214; 
+    height:220px;
+    margin:20px;
+    padding-left: 10px;
+    padding-top: 40px;
+    overflow-y: auto;
+
+}
+div.imdb-tile{
+    font-family: "agency FB", sans-serif;
+    font-size: 1.4em;
+    color: white;
+    text-align: left;
+    background-color: #2E2214;
+    height:220px;
+    margin:20px; 
+    padding-left: 10px;
+    padding-top: 40px;
+}
+div.plot-tile{
+    font-family: "agency FB", sans-serif;
+    font-size: 1.4em;
+    color: white;
+    text-align: left;
+    background-color: #2E2214;
+    margin:20px;
+    height:220px; 
+    padding: 10px;
+}
+div.plot-head{
+    font-size: 1.6em;
+    font-family: "agency FB", sans-serif;
+    text-align: center;
+}
+
+div.back-btn-back {
+    background-color:#493C23;
+    width: 300px;
+    padding: 20px;
+    border-radius:3px 3px 0px 0px;
+   
+}
+
