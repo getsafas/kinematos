@@ -30,24 +30,29 @@ text-align: center;
 
 div.movieSearch {
     background-color:#493C23;
-    width: 300px;
-    padding: 20px;
-    border-radius: 0px 0px 3px 3px;
+    padding: 20px 20px 30px;
+    border-radius: 0px 0px 10px 10px;
     text-align: center;
     color: #B8BE1C;
     font-family: sans-serif;
     font-size: 1em;
     font-weight: bold;
-    
 }
+
+div.back-btn-back {
+    margin-top: 382px;
+    background-color:#493C23;
+    border-radius:10px 10px 0px 0px;
+    padding: 20px;
+}
+
 
 div.movieFeeds {
     margin-top:30px;
-    margin-left: 20px;
     padding: 20px;
-    width:970px;
-    height:562px;
-    border-radius: 3px 3px 0px 0px;
+    /*width:970px;*/
+    /*height:562px;*/
+    border-radius: 10px 10px 0px 0px;
     background-color:#493C23 ;
 
 }
@@ -63,11 +68,16 @@ div.feeds-full-image {
     padding: 20px;
 }
 
+div.feeds-image{
+    padding:20px;
+}
 
-.feeds-img{
-    width: 250px;
-    height: 370px; 
-    margin: 0 auto;
+img.feeds-img{
+    width: 100%;
+}
+
+button.center-block{
+    margin-top: 20px;
 }
 
 div.movieResults {
@@ -134,14 +144,4 @@ div.plot-head{
     text-align: center;
 }
 
-div.back-btn-back {
-    position: absolute;
-    bottom: 0;
-    
-    background-color:#493C23;
-    width: 300px;
-    padding: 20px;
-    border-radius:3px 3px 0px 0px;
-   
-}
 

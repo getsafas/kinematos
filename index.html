@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>movie reviews</title>
+	<title>KINEMATOS</title>
 	<link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/custom.css" rel="stylesheet">
 	<meta charset="utf-8">
@@ -11,10 +11,11 @@
 <body>
 	<div class="container-fluid">
 		<div class="main-header">
-			KINEMATOS
+			KINEMATOS 
+			<!-- TODO: Add link -->
 		</div>
 		<div class="row">
-			<div class="col-sm-3 pull-right" style="height:593px;">
+			<div class="col-md-3">
 				<div class="movieSearch">
 					<form method="get" id="movieInput" > <!-- action="search.php" -->
 						<div class="heading-text">
@@ -28,15 +29,13 @@
 					</form>
 				</div>
 
-				<div class="back-btn-back" > <!-- style="display:none" -->
+				<div class="back-btn-back">
 					<button id="back" class="btn btn-success btn-block">Back<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></button>
 				</div>
 			</div>
 
-			
-
-			<div class="col-sm-9 pull-left" >
-				<div class="movieFeeds"  >
+			<div class="col-md-9">
+				<div class="movieFeeds">
 					<div class="feeds-header">
 						TOP RATED MOVIES OF 2015	
 					</div>
@@ -44,72 +43,75 @@
 						<div class="row">
 							<div class="col-sm-4">
 								<div class="feeds-image">
-									<img class="img-responsive feeds-img" src="img/felix.jpg">
-								</div>
-								<div class="row">
-									<div class="feeds-rating">
-										<div class="col-sm-6">
-											<span class="imdb-rating">
-												Imdb:9.2
-											</span>
+									<div class="row">
+										<div class="col-sm-12">
+											<img class="img-responsive feeds-img img-thumbnail" src="img/felix.jpg">
+										</div>
+										<div class="col-xs-6">
+											<div class="feeds-rating">
+												<span class="imdb-rating">
+													Imdb:9.2
+												</span>
+											</div>
+										</div>
+										<div class="col-xs-6">
+											<div class="feeds-rating">
+												<span class="metascore-rating">
+													Metascore:90%
+												</span>
+											</div>
 										</div>
 									</div>
-									<div class="feeds-rating">
-										<div class="col-sm-6">
-											<span class="metascore-rating">
-												Metascore:90%
-											</span>
-										</div>
-									</div>
+									<button type="button" id="more-button1" class="btn btn-default center-block">More<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></button>	
 								</div>
-								<br>
-								<button type="button" id="more-button1" class="btn btn-default center-block">More<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></button>	
 							</div>
 							<div class="col-sm-4">
 								<div class="feeds-image">
-									<img class="img-responsive feeds-img" src="img/inside.jpg">
-								</div>
-								<div class="row">
-									<div class="feeds-rating">
+									<div class="row">
+										<div class="col-sm-12">
+											<img class="img-responsive feeds-img img-thumbnail" src="img/inside.jpg">
+										</div>
 										<div class="col-sm-6">
-											<span class="imdb-rating">
-												Imdb:8.2
-											</span>
+											<div class="feeds-rating">
+												<span class="imdb-rating">
+													Imdb:8.2
+												</span>
+											</div>
+										</div>
+										<div class="col-sm-6">
+											<div class="feeds-rating">
+												<span class="metascore-rating">
+													Metascore:88%
+												</span>
+											</div>
 										</div>
 									</div>
-									<div class="feeds-rating">
-										<div class="col-sm-6">
-											<span class="metascore-rating">
-												Metascore:88%
-											</span>
-										</div>
-									</div>
+									<button type="button" id="more-button2" class="btn btn-default center-block">More<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></button>
 								</div>
-								<br>
-								<button type="button" id="more-button2" class="btn btn-default center-block">More<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></button>
 							</div>
 							<div class="col-sm-4">
 								<div class="feeds-image">
-									<img class="img-responsive feeds-img" src="img/martian.jpg">
-								</div>
-								<div class="row">
-									<div class="feeds-rating">
+									<div class="row">
+										<div class="col-sm-12">
+											<img class="img-responsive feeds-img img-thumbnail" src="img/martian.jpg">
+										</div>
 										<div class="col-sm-6">
-											<span class="imdb-rating">
-												Imdb:8.2
-											</span>
+											<div class="feeds-rating">
+												<span class="imdb-rating">
+													Imdb:8.2
+												</span>
+											</div>
+										</div>
+										<div class="col-sm-6">
+											<div class="feeds-rating">
+												<span class="metascore-rating">
+													Metascore:76%
+												</span>
+											</div>
 										</div>
 									</div>
-									<div class="feeds-rating">
-										<div class="col-sm-6">
-											<span class="metascore-rating">
-												Metascore:76%
-											</span>
-										</div>
-									</div>
+									<button type="button" id="more-button3" class="btn btn-default center-block">More<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></button>
 								</div>
-								<br>
-								<button type="button" id="more-button3" class="btn btn-default center-block">More<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></button>
 							</div>
 						</div>
 					</div>
@@ -179,9 +181,7 @@
 			</div>
 		</div>
 	</div>
-</div>
-</div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-<script src="Mscript.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script src="Mscript.js"></script>
 </body>
 </html>
